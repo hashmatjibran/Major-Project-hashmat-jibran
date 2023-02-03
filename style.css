@@ -1,0 +1,206 @@
+
+
+
+
+/* creating css variables */
+
+:root{
+
+    
+    /* color variables */
+    --white-color:white;
+    --text-color:rgb(226, 150, 232);
+    --icon-color:#ceba8d;
+    /* background-image variable  */
+    --background-image: url(./Images/body-images/3541800.jpg);
+	
+}
+
+/* body properties */
+body{
+    overflow: hidden;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 3px;
+    box-shadow: 0px 0px 10px 5px #ceba8d96;
+}
+
+
+
+/* main section */
+main{
+    width: 72%;
+    height: 75vh;
+    margin: 0;
+    padding: 1%;
+}
+
+
+/* carousel section properties like display ,height and width of section etc */
+.carousel-section{
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* the items i.e images in the carousel (their properties like height width etc) */
+.carousel-item{
+    width: 300px;
+    height: auto;
+    margin: -5%;
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
+
+/* what will happen when we will hover over carousel items like changing their scale , box shadow and indentation */
+.carousel-item:hover{
+    z-index: 3;
+    box-shadow: 0px 0px 5px whitesmoke ;
+    transform: scale(1.2);
+}
+
+
+
+
+/* latest-release heading */
+
+.latest-release {
+    margin-bottom: 2%;
+   
+}
+
+/* grid-container css */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1% 4%;
+    
+}
+
+.latest-release-img{
+    grid-area: image;
+  
+}
+
+.latest-release-text{
+    grid-area: text;
+    padding: 15%;
+}
+
+.latest-release-hover{
+    
+     grid-area: 1 / 1 / span 1 / span 1;
+    opacity: 0;
+  
+}
+
+.latest-release-hover > i{
+    position: relative;
+   font-size: 300%;
+   top: 25%;
+   opacity: 0.5;
+  
+}
+
+.latest-release-hover:hover{
+    color:white;
+    opacity: 1;
+    z-index: 1;
+}
+
+.grid-item{
+    display: inline-grid;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 'image auto text ';
+}
+
+.grid-item:hover{
+    box-shadow: 0px 0px 2px 2px var(--text-color);
+    background-color: grey;
+    
+}
+
+
+
+/* popular artists */
+
+.artist-div{
+    padding: 1%;
+    justify-content: space-evenly;
+}
+.artists{
+    width: 18%;
+    height: 150px;
+
+}
+.artists>a>img:hover{
+  box-shadow: 0px 0px 2px 2px var(--white-color);
+
+}
+
+.nextPage-link{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* english albums css*/
+
+.english-albums{
+    width: 18%;
+    height: 150px;
+}
+
+/* hindi albums css*/
+.Hindi-albums{
+    width: 18%;
+    height: 150px;
+}
+
+.english-albums:hover,.Hindi-albums:hover{
+    transform: scale(1.1);
+}
+
+/* My playlist / Queue  */
+.playlist{
+    background-color: var(--background-image);
+    width: 25%;
+    left: 74%;
+    height: 75vh;
+    position: absolute;
+    box-shadow: 0px -2px 5px 1px var(--icon-color);
+     
+}
+
+/*css for heading in playlist  */
+.playlist>h1{
+    margin-top: 0;
+    color: var(--icon-color);
+}
+
+.playlist-div
+{
+    height: 90%;
+}
+
+.playlist-item{
+    margin-bottom: 10px;
+    width: 85%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+.playlist-item:hover{
+    width: 93%;
+    padding-right: 1%;
+    background-color: rgba(250, 250, 210, 0.443);
+}
+

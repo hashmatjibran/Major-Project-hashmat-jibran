@@ -1,0 +1,178 @@
+/* creating css variables */
+
+:root{
+    /*general  color variables */
+    --white-color:white;
+    --text-color:rgb(226, 150, 232);
+    --icon-color:#ceba8d;
+
+    /* background-image variable  */
+    --background-image: url(./Images/body-images/2725544.jpg);
+    --horizontal-image:#141b41;
+	
+}
+
+/* css of body tag */
+
+body{
+    overflow: hidden;
+    font-size: 1.2rem;
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 3px;
+    box-shadow: 0 0 10px 5px whitesmoke;
+}
+
+/* css with Heading tag */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--icon-color);
+}
+
+/* css with paragraph tag */
+p{
+    font-family: monospace;
+    color: var(--white-color);
+}
+/* main element css */
+main{
+    width: 65%;
+    height: 75vh;
+    margin-left: 5%;
+}
+/* horizontal card css */
+
+.horizontal-card{
+    z-index: 1;
+}
+
+/* card image css */
+
+.card-image{
+    background-image: url(./Images/latest-english/let\ me\ go.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35%;
+}
+
+/* card text css like card heading and text inside the card */
+.card-text{
+    height: 100%;
+    width: 65%;
+background-color: var(--horizontal-image);
+}
+.card-text-heading{
+    height: fit-content;
+    width: 97%;
+    justify-content: space-between;
+}
+/* followers icon on right top of horizontal card */
+.followers{
+    height: fit-content;
+    position: relative;
+    top: 5%;
+}
+
+/* description of band */
+.description{
+  padding: 10px;
+
+}
+
+/* buttons in horizontal card */
+.buttons{
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+/* play all button css */
+.playall-btn{
+cursor: pointer;
+background-color:inherit;
+color: var(--text-color);
+border-radius: 5px;
+width: 35%;
+height: 5vh;
+font-size: 1.3rem;
+
+}
+.playall-btn:hover{
+    background-color: var(--white-color);
+    color: var(--icon-color);
+}
+
+/* follow button css  */
+.follow-btn{
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color:var(--text-color);
+}
+
+.follow-btn:hover{
+    background-color: inherit;
+    color:var(--white-color);
+}
+
+
+/* track number and album number */
+.tracks-number{
+    padding-left: 5%;
+    font-size: 1.2rem;
+}
+
+
+/* my playlist */
+
+.my-playlist{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* playlist row means playlist item row wise */
+
+.playlist-row{
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 1.5%;
+    margin-top: 1%;
+    
+}
+.playlist-row:hover{
+    background-color: rgba(211, 211, 211, 0.493);
+}
+
+/* left side div , time div and right-side div in playlist-row  */
+
+.left-side,.time-div,.right-div{
+    align-items: center;
+}
+
+.img-div{
+    margin: 0 12px;
+}
+
+.right-div>i{
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+
+/* recently-played ; aside section css here */
+aside{
+    
+    width: 33%;
+    height: 75vh;
+    position: absolute;
+    left: 66%;
+}
+
+
+/* recent playlist-div and similar artist div in the aside section */
+.recent-playlist-div,.similar-artists-div{
+    width: 100%;
+    height: 80%;
+}

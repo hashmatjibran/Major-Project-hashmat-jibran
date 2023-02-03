@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <link rel="stylesheet" href="./common-style.css">
+    <link rel="stylesheet" href="./single-screen.css">
+    <link rel="stylesheet" href="./single-screen-media.css">
+</head>
+<body>
+
+    <!-- nav bar (same as in the previos screen) -->
+    <nav class="navigation-bar flex flex-wrap">
+        <div class="Nav-brand inline-block  p-1">
+            <a href="index.html" style="height: 12%;display: block;position: absolute;width: 6%;"></a>
+            <div class="brand-image inline-block">
+                <img class="border-radius-half" src="./Images/body-images/gramaphone.webp" alt="brand-image" width="50" height="50">
+            </div>
+            <div class="brand-name inline-block">
+                <h2>Sj</h2>
+                <h6>Studio</h6>
+            </div>
+      
+        </div>
+
+            <div class="fav-div inline-block  p-1">
+                <h4>Favourites</h4>
+            </div>
+
+            <div class="play-div inline-block  p-1">
+                <h4>Playlists</h4>
+            </div>
+
+            <div class="inline-block  p-1">
+                <button class="notification-btn">
+                  <i class="fas fa-bell bell-ico icon"></i>
+                Notifications 
+                </button>
+                
+            </div>
+
+
+            <div class="inline-block  p-1 search-bar">
+                  <!-- magnifying glass- search icon btn-->
+                  <button>
+                        <i class="fas fa-search search-ico icon"></i>
+                  </button>
+                    
+                 <input type="text" name="search" placeholder="Search">
+           
+                   <!-- mic icon btn-->
+                   <button>
+                        <i class="fas fa-microphone mic-ico icon"></i>
+                   </button>
+                 
+                </div>
+
+
+            <div class="profile inline-block  p-1">
+                <img class="border-radius-half" src="./Images/body-images/profile-img.jpeg" alt="" width="50" height="50">
+            </div>
+
+    </nav>
+ <!-- nav bar ends here -->
+
+
+<!-- aside section -->
+<aside class="recently-played flex-column">
+   
+    <div class="recent-playlist-div flex-column overflow-y-scroll">
+         <h2 >
+        Recently Played
+    </h2>
+        <!-- playlist-row means one playlist item a song image and icons etc etc -->
+
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    01
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./songs/maxresdefault.jpg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">Kesariya</h5>  
+                    <p class="margin-0">Amitabh B.A</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- replicating playlist-row -->
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    02
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./Images/playlist/stoney.jpg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">Alone</h5>  
+                    <p class="margin-0">Alan Walker</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- replicating playlist-row -->
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    03
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./Images/latest-hindi/baarish.jpeg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">Baarish</h5>  
+                    <p class="margin-0">Amit Trivedi</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- replicating playlist-row -->
+
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    04
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./Images/latest-english/I'll Wait.jpg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">I'll Wait</h5>  
+                    <p class="margin-0">Alan Walker</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- div for similar artists in aside section -->
+    <div class="similar-artists-div flex-column overflow-y-scroll">
+        <h2>
+        Similar Artists
+        </h2>
+        <!-- creatig a playlist-row for similar artists -->
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    01
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./Images/latest-releases/sorry.jpg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">Alone</h5>  
+                    <p class="margin-0">Alan Walker</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- Replicating playlist-row for similar artists -->
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    02
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./Images/latest-releases/DaBaby.jpg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">Alone</h5>  
+                    <p class="margin-0">Alan Walker</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- Replicating playlist-row for similar artists -->
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    03
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./Images/latest-releases/DaBaby.jpg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">Alone</h5>  
+                    <p class="margin-0">Alan Walker</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- Replicating playlist-row for similar artists -->
+        <div class="playlist-row flex">
+
+            <div class="left-side flex">
+
+                <div class="sno">
+                    04
+                </div>
+
+                <div class="img-div inline-block">
+                <img src="./Images/latest-releases/DaBaby.jpg" alt="" width="50" height="100%">
+                </div>
+
+                <div class="inline-block text-center">
+                    <h5 class="margin-0">Alone</h5>  
+                    <p class="margin-0">Alan Walker</p>
+                </div>
+            </div>
+
+            <div class="right-div flex">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-download download-icon"></i>
+                <i class="fa-solid fa-minimize minimize-icon"></i>
+            </div>
+
+        </div>
+
+    </div>
+</aside>
+<!-- aside section ends here -->
+
+ <!-- main section  -->
+    <main class="margin-0 overflow-y-scroll">
+        <div class="horizontal-card flex">
+            <div class="card-image inline-block">
+
+            </div>
+            <div class="card-text flex-column">
+               
+                <div class="card-text-heading inline-flex p-1">
+                    <div>
+                        <h1 class=" margin-0">Cold Play </h1>
+                    <h3 class=" margin-0">British Band</h3>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-users followers-icon"> 21 M</i>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="description-div">
+                    <p class="description margin-0">
+                        Coldplay are a British rock band formed in London in 1996. Vocalist, rhythm guitarist and pianist Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman, and drummer Will Champion met at University College London and began playing music together from 1996 to 1998, first calling themselves Pectoralz and then Starfish before finally changing their name to Coldplay
+                    </p>
+                </div>
+
+                <div class="buttons inline-flex ">
+                    <button class="playall-btn">Play All</button>
+                    <button class="follow-btn"> Follow</button>
+                </div>
+                <div class="tracks-number">
+                    <p>247 Tracks | 128 Albums</p>
+                </div>
+
+               
+
+               
+            </div>
+        </div>
+
+        <div class="my-playlist flex-column">
+
+            <!-- creating playlist rows for each song item containg serial no, song image time and icons -->
+
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        01
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        02
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        03
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        04
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        05
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        06
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        07
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        08
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        09
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+            <!-- replicating the playlist rows -->
+            <div class="playlist-row inline-flex">
+
+                <div class="left-side flex ">
+                    <div class="sno">
+                        10
+                    </div>
+                    <div class=" img-div inline-block">
+                        <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="img" width="50" height="50">
+                    </div>
+
+                    <div class="inline-block text-center">
+                        <h5 class="margin-0">Alone</h5>  
+                        <p class="margin-0">Alan Walker</p>
+                    </div>
+                </div>
+
+                <div class="time-div flex">
+                    3:14
+                </div>
+
+                <div class="right-div flex">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-plus plus-icon"></i>
+                    <i class="fa-solid fa-thumbs-up thumbs-up-icon"></i>
+                </div>
+
+               
+
+            </div>
+
+        </div>
+
+
+    </main>
+   <!-- main section ends here -->
+    
+
+<!-- footer section same as in previous page -->
+<footer class=" music-bar flex">
+    <div class="music-image">
+        <img src="./songs/maxresdefault.jpg" alt="music image" width="100%" height="100%">
+    </div>
+    <div class="audio-div">
+        <audio controls class="audio-bar">
+            <source src="./songs/Kesariya_320(PagalWorld.com.se).mp3" type="audio/mp3">
+            
+          </audio>
+    </div>
+    <div class="music-icons">
+        <i class="fa-solid fa-share share-icon"></i>
+        <i class="fa-regular fa-heart heart-icon"></i>
+        <i class="fa-solid fa-bars bar-icon"></i>
+        <i class="fa-solid fa-download download-icon"></i>
+        <i class="fa-solid fa-volume-high volume-icon"></i>
+        <i class="fa-solid fa-sliders sliders-icon"></i>
+    </div>
+</footer>
+ <!--footer ends here  -->
+
+
+
+
+    <!-- font-awesome link -->
+    <script src="https://kit.fontawesome.com/7d7d520dab.js" crossorigin="anonymous"></script>
+</body>
+</html>

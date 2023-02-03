@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="./common-style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="index-media-queries.css">
+</head>
+<body>
+    
+    <!-- navigation-bar -->
+    <nav class="navigation-bar flex flex-wrap">
+        <div class="Nav-brand inline-block  p-1">
+            <a href="#" style="height: 12%;display: block;position: absolute;width: 6%;"></a>
+            <div class="brand-image inline-block">
+                <img class="border-radius-half" src="./Images/body-images/gramaphone.webp" alt="brand-image" width="50" height="50">
+            </div>
+            <div class="brand-name inline-block">
+                <h2>Sj</h2>
+                <h6>Studio</h6>
+            </div>
+      
+        </div>
+
+            <div class="fav-div inline-block  p-1">
+                <h4>Favourites</h4>
+            </div>
+
+            <div class="play-div inline-block  p-1">
+                <h4>Playlists</h4>
+            </div>
+
+            <div class="inline-block  p-1">
+                <button class="notification-btn">
+                  <i class="fas fa-bell bell-ico icon"></i>
+                Notifications 
+                </button>
+                
+            </div>
+
+
+            <div class="inline-block  p-1 search-bar">
+                  <!-- magnifying glass- search icon btn-->
+                  <button>
+                        <i class="fas fa-search search-ico icon"></i>
+                  </button>
+                    
+                 <input type="text" name="search" placeholder="Search">
+           
+                   <!-- mic icon btn-->
+                   <button>
+                        <i class="fas fa-microphone mic-ico icon"></i>
+                   </button>
+                 
+                </div>
+
+
+            <div class="profile inline-block  p-1">
+                <img class="border-radius-half" src="./Images/body-images/profile-img.jpeg" alt="" width="50" height="50">
+            </div>
+
+    </nav>
+
+    <!-- playlist side -->
+    <aside class="playlist">
+        <h1>
+            Queue
+        </h1>
+
+        <div class="playlist-div overflow-y-scroll">
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/stoney.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Alone <br>Alan Walker</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/after.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Alone Again <br>Weeknd</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">White Iverson <br>Post Malone</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/beer.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Golden <br>BTS</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/stoney.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Alone <br>Alan Walker</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/after.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Alone Again <br>Weeknd</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">White Iverson <br>Post Malone</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/beer.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Golden <br>BTS</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/stoney.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Alone Again <br>Weeknd</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/after.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">White Iverson <br>Post Malone</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Golden <br>BTS</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+            <div class="playlist-item flex ">
+                <img src="./Images/playlist/beer.jpg" alt="" width="25%" height="100%">
+                <span class="text-center">Alone <br>Alan Walker</span>
+                <span><i class="fa-regular fa-heart heart-icon"></i></span>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- main  -->
+    <main class="overflow-y-scroll">
+
+        <!-- Content Section -->
+        <section class="content flex-column ">
+
+            <!-- Carousel section -->
+            <section class="carousel-section flex p-1">
+                <div class="carousel-item inline-block">
+                    <img src="./Images/carousel/carousel-image-1.webp" alt="" width="100%">
+                </div>
+
+                <div class="carousel-item inline-block z-index-1">
+                    <img src="./Images/carousel/carousel-image-2.webp" alt="" width="100%">
+                </div>
+
+                <div class="carousel-item inline-block z-index-2">
+                    <img src="./Images/carousel/carousel-image-3.webp" alt="" width="100%">
+                </div>
+
+                <div class="carousel-item inline-block z-index-1">
+                    <img src="./Images/carousel/carousel-image-4.webp" alt="" width="100%">
+                </div>
+
+                <div class="carousel-item inline-block">
+                    <img src="./Images/carousel/carousel-image-5.webp" alt="" width="100%">
+                </div>
+
+            </section>
+
+            <!-- Latest-release -->
+            <section class="latest-release p-1">
+                <h2 class="p-1 margin-0" >
+                    Latest Release
+                </h2>
+                <div class="grid-container ">
+
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/DaBaby.jpg" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">DaBaby</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/dynamite.jpg" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">Dynamite</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/falling.jpg" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">Falling</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/havana.jpg" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">Havana</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/shit.png" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">Shit</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/sorry.jpg" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">Sorry</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/Weeknd.jpg" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">WeekEnd</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item " >
+                            <div class="latest-release-img text-center">
+                                <img src="./Images/latest-releases/willow.jpeg" alt="" width="100" height="100">
+                            </div>
+                            
+                            <div class="latest-release-hover text-center" >
+                                <i class="fa-sharp fa-solid fa-circle-play icon"></i>
+                            </div>
+
+                            <div class="latest-release-text text-center">
+                                <h4 class="margin-0">Willow</h4>
+                                <p class="margin-0">Dec,2022</p>
+                            </div>
+                        </div>
+
+
+                </div>
+            </section>
+
+            <!-- popular artists -->
+            <section class="popular-artist flex-column p-1">
+                <h2>
+                    Popular Artist
+                </h2>
+                <div class="artist-div flex flex-wrap">
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                             <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/adele.jpg" alt="">
+                   
+                        </a>
+                        </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/billie eilish.jpg" alt="">
+                   
+                        </a>
+                         </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/bob-marley.jpg" alt="">
+                   
+                        </a>
+                         </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/bruno mars.jpg" alt="">
+                    
+                        </a>
+                        </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/Camila Cabello.jpg" alt="">
+                   
+                        </a>
+                        </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/ed sheeran.jpg" alt="">
+                   
+                        </a>
+                         </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/eminem.jpg" alt="">
+                    
+                        </a>
+                        </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/Katy perry.jpg" alt="">
+                   
+                        </a>
+                         </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/Lil wayne.jpg" alt="">
+                    
+                        </a>
+                        </div>
+                    <div class="artists inline-block p-1">
+                        <a href="single-screen.html" class="nextPage-link inline-block">
+                            <img class="border-radius-half" width="100%" height="100%" src="./Images/popular-artists/sixnine.jpg" alt="">
+                                            
+                        </a>
+                         </div>
+
+                </div>
+                
+            </section>
+
+            <!-- latest-english -->
+            <section class="Latest-english">
+                <h2 class="p-1">
+                    Latest-English
+                </h2>
+
+                <div class="flex flex-wrap justify-content-space-evenly">
+                    <div class="english-albums inline-block">
+                        <img src="./Images/latest-english/I'll Wait.jpg" alt="eng-album" width="100%" height="100%">
+                    </div>
+
+                    <div class="english-albums inline-block">
+                        <img src="./Images/latest-english/ily.jpg" alt="eng-album" width="100%" height="100%">
+                    </div>
+
+                    <div class="english-albums inline-block">
+                        <img src="./Images/latest-english/let me go.jpg" alt="eng-album" width="100%" height="100%">
+                    </div>
+
+                    <div class="english-albums inline-block">
+                        <img src="./Images/latest-english/qurantine clean.jpg" alt="eng-album" width="100%" height="100%">
+                    </div>
+
+                    <div class="english-albums inline-block">
+                        <img src="./Images/latest-english/toosie slide.jpg" alt="eng-album" width="100%" height="100%">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- latest-hindi -->
+            <section class="Latest-Hindi">
+                <h2 class="p-1">
+                    Latest-Hindi
+                </h2>
+
+                <div class="flex flex-wrap justify-content-space-evenly">
+                    <div class="Hindi-albums inline-block">
+                        <img src="./Images/latest-hindi/baarish.jpeg" alt="Hindi-Album" width="100%" height="100%">
+                    </div>
+
+                    <div class="Hindi-albums inline-block">
+                        <img src="./Images/latest-hindi/galiyaan.jpg" alt="Hindi-Album" width="100%" height="100%">
+                    </div>
+
+                    <div class="Hindi-albums inline-block">
+                        <img src="./Images/latest-hindi/giveme some sunshine.jpg" alt="Hindi-Album" width="100%" height="100%">
+                    </div>
+
+                    <div class="Hindi-albums inline-block">
+                        <img src="./Images/latest-hindi/kaun tujhe.jpg" alt="Hindi-Album" width="100%" height="100%">
+                    </div>
+
+                    <div class="Hindi-albums inline-block">
+                        <img src="./Images/latest-hindi/tera ban jaunga.jpg" alt="Hindi-Album" width="100%" height="100%">
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+    
+    </main>
+
+    <!-- music bar at footer -->
+    <footer class=" music-bar flex">
+        <div class="music-image">
+            <img src="./songs/maxresdefault.jpg" alt="music image" width="100%" height="100%">
+        </div>
+        <div class="audio-div">
+            <audio controls class="audio-bar">
+                <source src="./songs/Kesariya_320(PagalWorld.com.se).mp3" type="audio/mp3">
+                
+              </audio>
+        </div>
+        <div class="music-icons">
+            <i class="fa-solid fa-share share-icon"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
+            <i class="fa-solid fa-bars bar-icon"></i>
+            <i class="fa-solid fa-download download-icon"></i>
+            <i class="fa-solid fa-volume-high volume-icon"></i>
+            <i class="fa-solid fa-sliders sliders-icon"></i>
+        </div>
+    </footer>
+
+    
+
+
+
+<!-- font-awesome link -->
+<script src="https://kit.fontawesome.com/7d7d520dab.js" crossorigin="anonymous"></script>
+</body>
+</html>

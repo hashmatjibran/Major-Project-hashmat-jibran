@@ -1,0 +1,380 @@
+
+:root{
+    --heart-normal:whitesmoke  ;
+    --heart-icon:red;
+
+    --thumbs-up-regular:skyblue;
+    --thumbs-up-hover:rgb(19, 83, 231);
+
+    --plus-icon-regular:blue;
+    --plus-icon-hover:green;
+
+    --sampling-plus-icon-regular:#183153;
+    --sampling-plus-icon-hover:#68788e;
+
+    --play-icon-regular:rgba(54, 54, 228, 0.477);
+    --play-icon-hover:rgb(54, 54, 228);
+
+
+    --download-icon-regular:lightgreen;
+    --download-icon-hover:green;
+
+    --minimize-icon-regular:darkgrey;
+    --minimize-icon-hover:grey;
+
+    --share-icon-regular:blue;
+    --share-icon-hover:rgb(59, 59, 116);
+
+    --sliders-icon-regular:whitesmoke;
+    --sliders-icon-hover:black;
+
+    --bar-icon-regular:lightgrey;
+    --bar-icon-hover:whitesmoke;
+
+    --followers-icon-regular:whitesmoke;
+}
+
+
+/* color for serial nos and time  */
+.sno,.time-div{
+    color: var(--white-color);
+}
+/* css section for icon colors */
+
+.followers-icon{
+    color: var(--followers-icon-regular);
+}
+.followers-icon:hover{
+    color: var(--icon-color);
+}
+
+
+.volume-icon{
+    color: white;
+}
+.volume-icon:hover{
+    transform: scale(1.1);
+}
+
+.bar-icon{
+    color: var(--bar-icon-regular);
+}
+.bar-icon:hover{
+    color: var(--bar-icon-hover);
+}
+
+
+.sliders-icon{
+    color: var(--sliders-icon-regular);
+}
+.sliders-icon:hover{
+    color: var(--sliders-icon-hover);
+}
+
+
+/* heart icon css */
+.heart-icon{
+    color: var(--heart-normal);
+}
+.heart-icon:hover{
+    color: var(--heart-icon);
+}
+ 
+/* thumbs icon css */
+.thumbs-up-icon{
+    color: var(--thumbs-up-regular);
+}
+.thumbs-up-icon:hover{
+    color: var(--thumbs-up-hover);
+}
+
+/* plus-icon css */
+.plus-icon{
+    color: var(--plus-icon-regular);
+}
+.plus-icon:hover{
+    color: var(--plus-icon-hover);
+}
+
+/* sampling plus css*/
+/* .sampling-plus-icon{
+    color: var(--sampling-plus-icon-regular);
+}
+.sampling-plus-icon:hover{
+    color: var(--sampling-plus-icon-hover);
+} */
+
+/* play icon css */
+.play-icon{
+    color: var(--play-icon-regular);
+}
+.play-icon:hover{
+    color: var(--play-icon-hover);
+}
+
+/* download icon css */
+.download-icon{
+    color: var(--download-icon-regular) ;
+}
+.download-icon:hover{
+    color: var(--download-icon-hover);
+}
+
+/* minimize icon css */
+.minimize-icon{
+    color: var(--minimize-icon-regular);
+}
+.minimize-icon:hover{
+    color: var(--minimize-icon-hover);
+}
+/* share icon css */
+.share-icon{
+    color: var(--share-icon-regular);
+}
+.share-icon:hover{
+    color: var(--share-icon-hover);
+}
+
+
+
+/* a general rule for setting inline block to different elements */
+.inline-block{
+    display: inline-block;
+}
+
+/* a general rule for setting flex to different elements */
+.flex{
+    display: flex;
+}
+
+/* a general rule for setting flex-column to different elements */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* a general rule for setting inline-flex to different elements */
+.inline-flex{
+    display: inline-flex;
+}
+
+/* a general rule for setting flex-wrap to different elements */
+.flex-wrap{
+    flex-wrap: wrap;
+}
+/* justify content general rule */
+.justify-content-space-evenly{
+    justify-content:  space-evenly;
+}
+
+/* overflow-y scroll */
+.overflow-y-scroll{
+    overflow-y: scroll;
+}
+
+/* z-index general properties like z-index :1,2 */
+.z-index-1
+{
+ z-index: 1;
+}
+    
+.z-index-2
+{
+    z-index: 2;
+}
+
+/* p-1 means padding 1% a general css rule */
+.p-1{
+    padding: 1%;
+}
+
+/* margin zero css rule */
+.margin-0{
+    margin: 0;
+}
+
+/* a general rule for setting border radius to 50% generally for images which have rounded borders */
+.border-radius-half{
+    border-radius: 50%;
+}
+
+/* general css rule for text-align center */
+.text-center{
+    text-align: center;
+}
+
+
+/* Navigation bar is common in both the pages and thus its css is placed in a common file */
+
+
+/* navigation bar represents the navigation bar */
+.navigation-bar{
+    color: var(--text-color);
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -1%;
+}
+
+/* brand name is the representation of website name which often displays at left top corner */
+.brand-name{
+    margin-left: 5px;
+    line-height: 1%;
+}
+
+/* search bar / search item in navigation bar */
+.search-bar{
+   
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+
+/* outline ,background and otehr properties for btns and input element in navigation bar */
+.search-bar > *,.notification-btn{
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+
+/* css for input div in search bar to take white color*/
+
+.search-bar>input{
+    color: var(--white-color);
+    
+}
+
+
+/* buttons in navigation bar */
+
+.search-bar>button,.notification-btn{
+    cursor: pointer;
+    color: var(--icon-color);
+}
+
+/* color and font size for icons in navigation bar */
+
+.bell-ico,.mic-ico,.search-ico{
+    font-size: large;
+}
+
+
+/* bell icon animation here */
+.bell-ico{
+  animation: swing 0.5s linear infinite ;
+}
+
+@keyframes swing{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        transform: rotateZ(-30deg);
+    }
+    
+    50%{
+        transform: rotateZ(0deg);
+    }
+    75%{
+        transform: rotateZ(30deg);
+    }
+    
+    100%{
+        transform: rotateZ(0deg);
+    }
+    
+}
+
+
+/* navigation properties end here */
+
+
+/* music player properties  */
+
+/*css for music bar placed in the footer*/
+.music-bar{
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #b5d3dd75;
+    border-radius: 30px;
+    width: 98%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    
+}
+
+/* css for the div containing image in the music bar */
+.music-image{
+    width: 8%;
+    height: 50px;
+    
+}
+.music-image>img{
+    border-radius: 30px;
+}
+
+/* css for the div containing audio bar */
+.audio-div{
+    display: inline-flex;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 50%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* css for the audio bar with controls */
+.audio-bar
+{
+    width: 100%; 
+    border-radius: 30px;
+}
+
+/* css for icons in the music bar at the footer of the page */
+.music-icons{
+    width: 20%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* music player properties end here  */
+
+/* common media queries */
+
+@media screen and (max-width:700px) {
+    .navigation-bar{
+        max-width: 95%;
+        padding: 0;
+    
+
+    }
+    .navigation-bar>.fav-div>h4{
+        display: none;
+    }
+    .navigation-bar>.play-div>h4{
+        display: none;
+    }
+    .navigation-bar>.search-bar{
+        display: none;
+       
+    }
+
+
+    .music-bar{
+        height: auto;
+        font-size: 0.8rem;
+    }
+    .music-image{
+        height: 50px;
+        width: 12%;
+    }
+    .music-icons{
+        margin-right: 5%;
+    }
+    
+}

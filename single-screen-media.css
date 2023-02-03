@@ -1,0 +1,28 @@
+
+/* tried to make it simple and easy to undertand */
+/* creating a media query for a breakpoint of 700px  */
+@media screen and (max-width:700px) {
+
+    main{
+        width: 100%;
+        
+    }
+    .horizontal-card{
+        flex-direction: column;
+    }
+    .card-image{
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .card-text{
+        width: 100%;
+    }
+
+    /* recently played section will not be displayed for small and <small devices  */
+    .recently-played{
+        display: none;
+    }
+    
+    
+}
